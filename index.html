@@ -8,13 +8,19 @@
 </head>
 <body class="bg-green-400 flex items-center justify-center min-h-screen font-poppins text-white">
     
-    <section id="mainSection" class="bg-gray-700 min-w-5xl min-h-[600px] max-w-[1200px] flex justify-center items-center px-4 py-2 z-40">
+    <section id="mainSection" class="bg-gray-700 min-w-5xl min-h-[600px] max-w-[1200px] flex justify-center items-center px-4 py-2 z-40 rounded-4xl gap-2.5">
         
         <button id="buttonAdd" class="hover:cursor-pointer  bg-blue-500 px-4 py-2 rounded-4xl hover:bg-blue-600 transition
         min-h-96 min-w-80 flex flex-col items-center justify-around text-2xl">Agregar tarea  
         <div class="flex items-center justify-center min-h-52 min-w-44">
         <img src="src/img/icon-add.png" alt="Agregar nota icono" class="min-w-[200px] min-h-[200px]"></div>
         </button>
+        
+        <div class="bg-amber-50 text-gray-800 min-h-96 min-w-80  max-w-80 px-4 py-2 rounded-4xl flex flex-col justify-around">
+            <h3 class="text-3xl text-center">titulo</h3>
+            <p class="break-words max-h-40 overflow-y-auto">dkjasklfjadslfjasflasdjflkñaasjflkajsdfkjsjfksadlfjlkaskfsjdfjkajfkajkslfjlksjks</p>
+            <p class="bg-green-400 inline-block w-[60%] py-5 px-1 text-center rounded-full">fecha: 12-09-3213</p>
+        </div>
 
     </section>
 
@@ -24,7 +30,7 @@
 
     <section id="modalForm" class="absolute z-50 min-h-screen min-w-[100%] flex items-center justify-center hidden">
         <div class="px-4 py-2 rounded-4xl bg-blue-600 transition min-h-96 min-w-80 flex flex-col items-center justify-around text-2xl">
-            <form class="flex flex-col gap-2.5">
+            <form id="formulario" class="flex flex-col gap-2.5">
                 <div class="flex flex-col bg-amber-300 gap-2">
                     <label for="titulo">Actividad</label>
                     <input type="text" name="titulo" id="titulo" required placeholder="Titulo de la actividad" oninput="autoResizeInput(this)" maxlength="50" class="bg-transparent outline-none text-xl min-w-[19ch]">
@@ -48,6 +54,7 @@
     <script src="src/js/resizeTextarea.js"></script>
     <script src="src/js/resizeInput.js"></script>
     <script src="src/js/addNote.js"></script>
+    <script src="src/js/insertNote.js"></script>
     <!-- CAMBIAR LOS ONIPUT -->
 </body>
 </html>
